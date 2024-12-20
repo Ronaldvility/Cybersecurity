@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Quiz</title>
+    <link rel="stylesheet" href="Quiz.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>Quiz #1</h1>
+
+        <div class="input-container">
+            <div class="name-input">
+                <label for="Full Name">Full Name: </label>
+                <input type="text" id="name" placeholder="Enter Your Name" required>  
+            </div>
+        
+            <div class="StudentNumber-input">
+                <label for="Student Number">Student Number: </label>
+                <input type="text" id="studentNumber" placeholder="Enter Your Student Number" required>
+            </div>
+        </div>
+        
+        
+        
+        <div class="result-container">
+            <div class="result" id="score">Score: 0</div>
+            <div class="result" id="rate">Rate: 0%</div>
+        </div>
+
+        <div class="question">
+            <p>1. Which role primarily focuses on monitoring security systems and responding to incidents? </p>
+            <div class="answers">
+                <label><input type="radio" name="q1" value="wrong">Security Architect  </label><br>
+                <label><input type="radio" name="q1" value="correct"> Security Analyst  </label><br>
+                <label><input type="radio" name="q1" value="wrong"> Compliance Officer  </label><br>
+                <label><input type="radio" name="q1" value="wrong"> Digital Forensics Expert    </label><br>
+            </div>
+        </div>
+
+        <div class="question">
+            <p>2. What is the primary responsibility of a Network Security Engineer?  </p>
+            <div class="answers">
+                <label><input type="radio" name="q2" value="wrong"> Designing user interfaces for applications  </label><br>
+                <label><input type="radio" name="q2" value="wrong"> Managing cloud infrastructure  </label><br>
+                <label><input type="radio" name="q2" value="correct"> Implementing secure network architectures  </label><br>
+                <label><input type="radio" name="q2" value="wrong">Conducting risk assessments  </label><br>
+            </div>
+        </div>
+
+        <div class="question">
+            <p>3. Which role integrates security into the DevOps process? </p>
+            <div class="answers">
+                <label><input type="radio" name="q3" value="wrong"> Penetration Tester    </label><br>
+                <label><input type="radio" name="q3" value="wrong"> Security Program Manager    </label><br>
+                <label><input type="radio" name="q3" value="correct"> DevSecOps Engineer   </label><br>
+                <label><input type="radio" name="q3" value="wrong"> Threat Intelligence Analyst    </label><br>
+            </div>
+        </div>
+
+        <div class="question">
+            <p>4. What is the focus of a Compliance Officer in cybersecurity?  </p>
+            <div class="answers">
+                <label><input type="radio" name="q4" value="wrong"> Conducting penetration tests     </label><br>
+                <label><input type="radio" name="q4" value="correct"> Ensuring adherence to industry regulations      </label><br>
+                <label><input type="radio" name="q4" value="wrong"> Analyzing network traffic    </label><br>
+                <label><input type="radio" name="q4" value="wrong"> Developing software applications     </label><br>
+            </div>
+        </div>
+
+        <div class="question">
+            <p>5. Which cybersecurity role is responsible for gathering and analyzing information about emerging threats?   </p>
+            <div class="answers">
+                <label><input type="radio" name="q5" value="wrong"> Incident Responder       </label><br>
+                <label><input type="radio" name="q5" value="correct"> Threat Intelligence Analyst        </label><br>
+                <label><input type="radio" name="q5" value="wrong"> Cloud Security Architect     </label><br>
+                <label><input type="radio" name="q5" value="wrong"> Digital Forensics Expert       </label><br>
+            </div>
+        </div>
+
+        <div class="controls">
+            <button onclick="checkAnswers()" id="checkBtn">Check Score</button>
+            <button onclick="submitScore()" id="submitBtn" class="hidden">Submit</button>
+            <button onclick="retryQuiz()" id="retryBtn" class="hidden">Try Again</button>
+            <p id="retryMessage" class="retry-message hidden">You can try once</p> <!-- New message -->
+        </div>
+    </div>
+
+    <div id="congratsMessage" class="congrats-message">
+        <div class="message" id="congratsText"></div>
+        <button onclick="closeCongrats()">OK</button>
+    </div>
+
+    <script src="Quiz.js"></script>
+</body>
+</html>

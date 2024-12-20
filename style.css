@@ -1,0 +1,129 @@
+/* General Body Styling */
+body {
+    font-family: 'Poppins', sans-serif; /* Elegant font */
+    background-color: #f0f4f8; /* Soft light background */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Global Container for Content */
+.module-container {
+    width: 85%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+/* Main Module Title Styling */
+.module-title {
+    font-size: 2.5em;
+    color: #2c3e50; /* Dark blue-gray color for professional feel */
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Styling for Discussion Section */
+.module-discussion {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #fff; /* White background for readability */
+    border-radius: 10px; /* Soft rounded corners */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover transition */
+}
+
+.module-discussion:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Deeper shadow on hover */
+}
+
+.module-discussion h2 {
+    color: #1b78db; /* Green color for subheadings */
+    font-size: 1.75em;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+.module-discussion p {
+    color: #7f8c8d; /* Darker gray for better readability */
+    line-height: 1.8;
+    text-align: justify;
+}
+
+/* Discussion Content Styling */
+.discussion-content {
+    font-style: normal;
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #ecf0f1; /* Light gray background for distinction */
+    border-left: 5px solid #1b78db; /* Green accent for emphasis */
+    border-radius: 5px;
+    font-size: 1.1em;
+}
+
+/* Navigation Menu */
+nav {
+    margin-top: 40px;
+    background-color: #2c3e50; /* Dark background for navigation */
+    padding: 15px 0;
+    border-radius: 5px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 25px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #4CAF50; /* Green highlight on hover */
+    border-radius: 5px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .module-container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .module-title {
+        font-size: 2.2em;
+    }
+
+    .module-discussion {
+        padding: 15px;
+    }
+
+    .module-discussion h2 {
+        font-size: 1.6em;
+    }
+
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    nav ul li a {
+        font-size: 1.1em;
+    }
+}
