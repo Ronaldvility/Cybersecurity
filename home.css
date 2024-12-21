@@ -204,5 +204,27 @@ span {
 
 /* For Consistent Grid Gaps */
 .row.g-4 {
-    row-gap: 2rem; /* Vertical spacing between rows */
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 1rem; /* Adjust spacing between columns */
+    padding: 1rem 0; /* Optional padding for a cleaner look */
+}
+
+.row.g-4::-webkit-scrollbar {
+    height: 8px; /* Adjust scrollbar height */
+}
+
+.row.g-4::-webkit-scrollbar-thumb {
+    background: #888; /* Scrollbar color */
+    border-radius: 4px;
+}
+
+.row.g-4::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Darker on hover */
+}
+
+.col-md-6, .col-lg-3 {
+    flex: 0 0 auto;
+    width: calc(100% / 4 - 1rem); /* Four columns width with spacing adjustment */
 }
