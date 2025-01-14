@@ -1,0 +1,182 @@
+/* General layout */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
+
+.quiz-container {
+    width: 80%;
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.input-container,
+.result-container {
+    margin-bottom: 20px;
+}
+
+.name-input,
+.StudentNumber-input {
+    margin-bottom: 10px;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    color: #34495e;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+button.hidden {
+    display: none;
+}
+
+/* Question section */
+.question {
+    margin-bottom: 20px;
+}
+
+.answers {
+    padding-left: 20px;
+    font-size: 16px;
+}
+
+.answers label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.answers input[type="radio"] {
+    margin-right: 10px;
+}
+
+/* Results section */
+.result-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.result {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #2c3e50;
+}
+
+/* Controls section */
+.controls {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.retry-message {
+    text-align: center;
+    font-size: 16px;
+    color: #e74c3c;
+}
+
+/* Congratulations message */
+.congrats-message {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.congrats-message .message {
+    background-color: white;
+    padding: 30px;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.congrats-message button {
+    background-color: #2ecc71;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.congrats-message button:hover {
+    background-color: #27ae60;
+}
+
+/* Highlighting correct and wrong answers */
+.correct {
+    background-color: #d4edda; /* Light green background */
+    color: #155724; /* Dark green text */
+    border: 1px solid #c3e6cb; /* Green border */
+    padding: 5px;
+    border-radius: 4px;
+}
+
+.wrong {
+    background-color: #f8d7da; /* Light red background */
+    color: #721c24; /* Dark red text */
+    border: 1px solid #f5c6cb; /* Red border */
+    padding: 5px;
+    border-radius: 4px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .quiz-container {
+        width: 90%;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    .controls {
+        flex-direction: column;
+    }
+
+    .answers {
+        font-size: 14px;
+    }
+}

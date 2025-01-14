@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cybersecurity Devices and Technologies Quiz</title>
+    <link rel="stylesheet" href="Quiz.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>4.1 Cybersecurity Devices and Technologies Quiz</h1>
+
+        <input type="hidden" id="quiz_no" value="4.1">
+        <input type="hidden" id="quiz_name" value="Cybersecurity Devices and Technologies Quiz">
+
+        <div class="input-container">
+            <div class="name-input">
+                <label for="Full Name">Full Name:</label>
+                <input type="text" id="name" placeholder="Enter Your Name" required>
+            </div>
+
+            <div class="StudentNumber-input">
+                <label for="Student Number">Student Number:</label>
+                <input type="text" id="studentNumber" placeholder="Enter Your Student Number" required>
+            </div>
+        </div>
+
+        <!-- Questions -->
+        <div class="question">
+            <p>1. What is the primary function of a firewall?</p>
+            <div class="answers">
+                <label><input type="radio" name="q1" value="wrong"> Blocking outgoing traffic</label><br>
+                <label><input type="radio" name="q1" value="correct"> Monitoring and controlling network traffic</label><br>
+                <label><input type="radio" name="q1" value="wrong"> Encrypting data</label><br>
+                <label><input type="radio" name="q1" value="wrong"> Scanning for malware</label><br>
+            </div>
+        </div>
+
+        <div class="question">
+            <p>2. Which type of firewall inspects packets based on IP addresses, protocols, and port numbers?</p>
+            <div class="answers">
+                <label><input type="radio" name="q2" value="wrong"> Proxy Firewall</label><br>
+                <label><input type="radio" name="q2" value="wrong"> Next-Generation Firewall</label><br>
+                <label><input type="radio" name="q2" value="correct"> Packet-Filtering Firewall</label><br>
+                <label><input type="radio" name="q2" value="wrong"> Stateful Inspection Firewall</label><br>
+            </div>
+        </div>
+
+        <div class="question">
+            <p>3. Which of the following is an example of an Intrusion Detection System (IDS)?</p>
+            <div class="answers">
+                <label><input type="radio" name="q3" value="correct"> Snort</label><br>
+                <label><input type="radio" name="q3" value="wrong"> McAfee Network Security</label><br>
+                <label><input type="radio" name="q3" value="wrong"> Cisco IPS</label><br>
+                <label><input type="radio" name="q3" value="wrong"> FireEye</label><br>
+            </div>
+        </div>
+
+        <div class="question">
+            <p>4. Which device combines antivirus, firewall, and content filtering into one platform?</p>
+            <div class="answers">
+                <label><input type="radio" name="q4" value="wrong"> Stateful Inspection Firewall</label><br>
+                <label><input type="radio" name="q4" value="wrong"> Intrusion Prevention System (IPS)</label><br>
+                <label><input type="radio" name="q4" value="correct"> Unified Threat Management (UTM)</label><br>
+                <label><input type="radio" name="q4" value="wrong"> Web Application Firewall (WAF)</label><br>
+            </div>
+        </div>
+
+        <div class="question">
+            <p>5. Which type of malware encrypts the victim's files and demands payment for a decryption key?</p>
+            <div class="answers">
+                <label><input type="radio" name="q5" value="wrong"> Trojan Horse</label><br>
+                <label><input type="radio" name="q5" value="wrong"> Spyware</label><br>
+                <label><input type="radio" name="q5" value="correct"> Ransomware</label><br>
+                <label><input type="radio" name="q5" value="wrong"> Worm</label><br>
+            </div>
+        </div>
+
+        <div class="question">
+            <p>6. What does a Virtual Private Network (VPN) appliance primarily do?</p>
+            <div class="answers">
+                <label><input type="radio" name="q6" value="wrong"> Detects and removes malware</label><br>
+                <label><input type="radio" name="q6" value="correct"> Encrypts communications between a user and a network</label><br>
+                <label><input type="radio" name="q6" value="wrong"> Blocks unauthorized access to a website</label><br>
+                <label><input type="radio" name="q6" value="wrong"> Monitors network traffic for suspicious behavior</label><br>
+            </div>
+        </div>
+
+        <div class="question">
+            <p>7. Which scanning technique sends SYN packets to determine the state of a port without establishing a full connection?</p>
+            <div class="answers">
+                <label><input type="radio" name="q7" value="wrong"> TCP Connect Scan</label><br>
+                <label><input type="radio" name="q7" value="wrong"> UDP Scan</label><br>
+                <label><input type="radio" name="q7" value="correct"> SYN Scan</label><br>
+                <label><input type="radio" name="q7" value="wrong"> Stealth Scan</label><br>
+            </div>
+        </div>
+
+        <div class="question">
+            <p>8. What type of firewall provides application-level filtering and intrusion prevention?</p>
+            <div class="answers">
+                <label><input type="radio" name="q8" value="wrong"> Packet-Filtering Firewall</label><br>
+                <label><input type="radio" name="q8" value="wrong"> Proxy Firewall</label><br>
+                <label><input type="radio" name="q8" value="wrong"> Stateful Inspection Firewall</label><br>
+                <label><input type="radio" name="q8" value="correct"> Next-Generation Firewall</label><br>
+            </div>
+        </div>
+
+        <div class="question">
+            <p>9. Which security tool aggregates logs and provides real-time alerts for security analysis?</p>
+            <div class="answers">
+                <label><input type="radio" name="q9" value="wrong"> Endpoint Detection and Response (EDR)</label><br>
+                <label><input type="radio" name="q9" value="correct"> Security Information and Event Management (SIEM)</label><br>
+                <label><input type="radio" name="q9" value="wrong"> Intrusion Detection System (IDS)</label><br>
+                <label><input type="radio" name="q9" value="wrong"> Unified Threat Management (UTM)</label><br>
+            </div>
+        </div>
+
+        <div class="question">
+            <p>10. What type of malware monitors user activities and collects sensitive information such as passwords?</p>
+            <div class="answers">
+                <label><input type="radio" name="q10" value="wrong"> Worm</label><br>
+                <label><input type="radio" name="q10" value="wrong"> Virus</label><br>
+                <label><input type="radio" name="q10" value="correct"> Spyware</label><br>
+                <label><input type="radio" name="q10" value="wrong"> Adware</label><br>
+            </div>
+        </div>
+
+        <div class="result-container">
+            <div class="result" id="score">Score: 0</div>
+            <div class="result" id="rate">Rate: 0%</div>
+        </div>
+
+        <div class="controls">
+            <button onclick="checkAnswers()" id="checkBtn">Check Score</button>
+            <button onclick="submitScore()" id="submitBtn" class="hidden">Submit</button>
+            <button onclick="retryQuiz()" id="retryBtn" class="hidden">Try Again</button>
+            <p id="retryMessage" class="retry-message hidden">You can try once</p>
+        </div>
+    </div>
+
+    <div id="congratsMessage" class="congrats-message">
+        <div class="message" id="congratsText"></div>
+        <button onclick="closeCongrats()">OK</button>
+    </div>
+
+    <script src="Quiz.js"></script>
+</body>
+</html>
