@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Results - Quiz 4</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Back Button -->
+<button class="back-button" onclick="window.history.back()">Back</button>
+
+    <div class="container">
+        <h1>Quiz 4 Results</h1>
+        
+        <!-- Hidden input to store quiz_no -->
+        <input type="hidden" id="quiz_no" value="4">
+        
+        <!-- Table to display results -->
+        <table id="results-table">
+            <thead>
+                <tr>
+                    <th>Student Name</th>
+                    <th>Student Number</th>
+                    <th>Quiz Result</th>
+                    <th>Quiz Rating</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Results will be inserted here dynamically -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="QRES.js"></script>
+</body>
+</html>

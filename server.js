@@ -40,33 +40,49 @@ app.post('/submit-quiz', async (req, res) => {
     }
 });
 
-// Route to get leaderboard data for a specific quiz
-app.get('/leaderboard/:quizNo', async (req, res) => {
-    const { quizNo } = req.params;
+// Route to fetch results for a specific quiz
+app.post('/api/results', (req, res) => {
+    const quizNo = parseInt(req.body.quiz_no);  // Ensure quiz_no is an integer
 
-    // Ensure quizNo is between 1 and 12
-    if (quizNo < 1 || quizNo > 12) {
-        return res.status(400).json({ message: 'Quiz number must be between 1 and 12' });
-    }
+    console.log('Received quiz_no:', quizNo); // Log for debugging
 
-    // PostgreSQL query to get leaderboard data for the specified quiz
+    // Query to fetch data from the quizzes table
     const query = `
-        SELECT student_name, quiz_result, quiz_rating
+        SELECT student_name, student_no, quiz_result, quiz_rating
         FROM quizzes
-        WHERE quiz_no = $1
-        ORDER BY quiz_result DESC;
+        WHERE quiz_no = $1;
     `;
-    const values = [quizNo];
-
-    try {
-        const result = await pool.query(query, values);
-
-        if (result.rows.length === 0) {
-            return res.status(404).json({ message: `No data found for quiz ${quizNo}` });
+    
+    pool.query(query, [quizNo], (err, result) => {
+        if (err) {
+            console.error('Error executing query', err.stack);  // Log the error
+            return res.status(500).send('Error fetching data');
         }
 
-        // Send the leaderboard data as a response, excluding quiz_no
-        res.json(result.rows);
+        console.log('Query result:', result.rows); // Log the fetched data
+        if (result.rows.length === 0) {
+            console.log('No results found for quiz_no:', quizNo);
+            return res.status(404).send('No results found for this quiz number');
+        }
+
+        res.json(result.rows);  // Send the data back as JSON
+    });
+});
+
+// Route to fetch leaderboard data
+app.post('/api/leaderboard', async (req, res) => {
+    const query = `
+        SELECT student_no, SUM(quiz_result) AS total_points
+        FROM quizzes
+        GROUP BY student_no
+        ORDER BY total_points DESC
+        LIMIT 10;
+    `;
+
+    try {
+        const result = await pool.query(query);
+        console.log('Leaderboard data:', result.rows); // Log the fetched data
+        res.json(result.rows);  // Send the data back as JSON
     } catch (error) {
         console.error('Error fetching leaderboard data:', error);
         res.status(500).json({ message: 'Error fetching leaderboard data' });
@@ -76,22 +92,4 @@ app.get('/leaderboard/:quizNo', async (req, res) => {
 // Start the server
 app.listen(3000, '0.0.0.0', () => {
     console.log('Server is running on http://localhost:3000');
-});
-
-// Endpoint to get leaderboard data
-app.get('/leaderboard', async (req, res) => {
-    try {
-        // Query the database and order by quiz_result (highest first)
-        const result = await pool.query(`
-            SELECT student_name, student_no, quiz_result, quiz_rating
-            FROM quizzes
-            ORDER BY quiz_result DESC, quiz_rating DESC
-        `);
-        
-        // Send the leaderboard data as a JSON response
-        res.json(result.rows);
-    } catch (err) {
-        console.error('Error fetching leaderboard data:', err);
-        res.status(500).send('Internal Server Error');
-    }
 });
