@@ -11,15 +11,6 @@ const backButton = document.getElementById('back-btn'); // Back button
 const quizSection = document.getElementById('quiz-section'); // Quiz section
 const quizBoxes = document.querySelectorAll('.quiz-box'); // Quiz boxes
 
-// Mock data for the leaderboard
-const leaderboardData = [
-    { name: 'Alice', score: 95, rating: 'Excellent' },
-    { name: 'Bob', score: 90, rating: 'Very Good' },
-    { name: 'Charlie', score: 85, rating: 'Good' },
-    { name: 'Diana', score: 80, rating: 'Fair' },
-    { name: 'Eve', score: 75, rating: 'Average' },
-];
-
 logo.addEventListener('click', () => {
     sidebar.classList.toggle('collapsed');
     if (sidebar.classList.contains('collapsed')) {
@@ -37,28 +28,6 @@ modulesBtn.addEventListener('click', () => {
     quizSection.style.display = 'none'; // Hide quiz section when showing modules
 });
 
-// Show Leaderboard Section when "Leaderboards" is clicked
-leaderboardBtn.addEventListener('click', () => {
-    leaderboardSection.style.display = leaderboardSection.style.display === 'none' ? 'block' : 'none';
-    modulesSection.style.display = 'none'; // Hide modules when showing leaderboard
-    pdfViewer.style.display = 'none'; // Hide PDF viewer when showing leaderboard
-    quizSection.style.display = 'none'; // Hide quiz section when showing leaderboard
-
-    // Populate leaderboard table
-    const leaderboardBody = document.getElementById('leaderboard-body');
-    leaderboardBody.innerHTML = ''; // Clear previous rows
-
-    leaderboardData.sort((a, b) => b.score - a.score).forEach((entry, index) => {
-        const row = document.createElement('tr');
-        row.innerHTML = `
-            <td>${index + 1}</td>
-            <td>${entry.name}</td>
-            <td>${entry.score}</td>
-            <td>${entry.rating}</td>
-        `;
-        leaderboardBody.appendChild(row);
-    });
-});
 
 // Function to open PDF based on the module clicked
 const moduleBoxes = document.querySelectorAll('.module-box');
@@ -99,4 +68,7 @@ quizBoxes.forEach((box) => {
         const quizNumber = box.getAttribute('data-quiz');
         window.location.href = `quiz${quizNumber}.html`;  // Redirect to the corresponding quiz HTML file
     });
+    
 });
+
+

@@ -56,22 +56,28 @@ function submitQuizData() {
     }
 
     // Send the data to the server via POST
-    fetch('/submit-quiz', {
+    fetch('http://localhost:3000/submit-quiz', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
         },
         body: JSON.stringify(window.quizData),
     })
-    .then(response => response.json())
+    .then(response => {
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        return response.json();
+    })
     .then(data => {
         alert('Quiz data submitted successfully');
         console.log(data);
     })
     .catch(error => {
-        alert('Error submitting quiz data');
+        alert(`Error submitting quiz data: ${error.message}`);
         console.error(error);
     });
+    
 }
 
 // Trigger check answers on "Check Score" button click
@@ -85,3 +91,5 @@ document.getElementById('submitBtn').addEventListener('click', function(event) {
     event.preventDefault();
     submitQuizData();
 });
+
+

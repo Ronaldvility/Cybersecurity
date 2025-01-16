@@ -170,3 +170,18 @@ tr:hover {
 #pdf-viewer {
     display: none;
 }
+#leaderboard-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#leaderboard-table th, #leaderboard-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+#leaderboard-table th {
+    background-color: #f2f2f2;
+}

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cybersecurity Quiz 4.5</title>
+    <link rel="stylesheet" href="Quiz.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>4.5 Cisco ISE and TrustSec</h1>
+
+        <input type="hidden" id="quiz_no" value="6">
+        <input type="hidden" id="quiz_name" value="Cisco ISE and TrustSec">
+
+        <div class="input-container">
+            <div class="name-input">
+                <label for="Full Name">Full Name:</label>
+                <input type="text" id="name" placeholder="Enter Your Name" required>
+            </div>
+
+            <div class="StudentNumber-input">
+                <label for="Student Number">Student Number:</label>
+                <input type="text" id="studentNumber" placeholder="Enter Your Student Number" required>
+            </div>
+        </div>
+
+        <!-- Questions -->
+        <div class="question">
+            <p>1. What does Cisco ISE stand for?</p>
+            <div class="answers">
+                <label><input type="radio" name="q1" value="wrong"> Integrated Security Engine</label><br>
+                <label><input type="radio" name="q1" value="correct"> Identity Services Engine</label><br>
+                <label><input type="radio" name="q1" value="wrong"> Internet Security Environment</label><br>
+                <label><input type="radio" name="q1" value="wrong"> Identity Security Engine</label><br>
+            </div>
+        </div>
+
+        <div class="question">
+            <p>2. What is the primary function of Cisco ISE?</p>
+            <div class="answers">
+                <label><input type="radio" name="q2" value="wrong"> Data encryption</label><br>
+                <label><input type="radio" name="q2" value="correct"> Network access control and policy management</label><br>
+                <label><input type="radio" name="q2" value="wrong"> Intrusion detection</label><br>
+                <label><input type="radio" name="q2" value="wrong"> Threat intelligence</label><br>
+            </div>
+        </div>
+
+        <div class="question">
+            <p>3. Which authentication method is NOT used by Cisco ISE?</p>
+            <div class="answers">
+                <label><input type="radio" name="q3" value="wrong"> 802.1X</label><br>
+                <label><input type="radio" name="q3" value="wrong"> MAC Address Bypass (MAB)</label><br>
+                <label><input type="radio" name="q3" value="correct"> Two-Factor Authentication (2FA)</label><br>
+                <label><input type="radio" name="q3" value="wrong"> Web-based authentication</label><br>
+            </div>
+        </div>
+
+        <div class="question">
+            <p>4. What key feature of Cisco ISE ensures devices meet security compliance standards before access?</p>
+            <div class="answers">
+                <label><input type="radio" name="q4" value="wrong"> Role-Based Access Control</label><br>
+                <label><input type="radio" name="q4" value="correct"> Posture Assessment</label><br>
+                <label><input type="radio" name="q4" value="wrong"> Data Encryption</label><br>
+                <label><input type="radio" name="q4" value="wrong"> User Classification</label><br>
+            </div>
+        </div>
+
+        <div class="question">
+            <p>5. Cisco TrustSec focuses primarily on which aspect of cybersecurity?</p>
+            <div class="answers">
+                <label><input type="radio" name="q5" value="wrong"> Network access control</label><br>
+                <label><input type="radio" name="q5" value="correct"> Data security and access control within the network</label><br>
+                <label><input type="radio" name="q5" value="wrong"> Firewall management</label><br>
+                <label><input type="radio" name="q5" value="wrong"> User authentication</label><br>
+            </div>
+        </div>
+
+        <div class="question">
+            <p>6. In Cisco TrustSec, what is used to classify data based on its sensitivity?</p>
+            <div class="answers">
+                <label><input type="radio" name="q6" value="wrong"> Encryption</label><br>
+                <label><input type="radio" name="q6" value="wrong"> User identity</label><br>
+                <label><input type="radio" name="q6" value="wrong"> Role-based access control</label><br>
+                <label><input type="radio" name="q6" value="correct"> Classification policies</label><br>
+            </div>
+        </div>
+
+        <div class="question">
+            <p>7. Which of the following best describes the role-based access control (RBAC) in Cisco TrustSec?</p>
+            <div class="answers">
+                <label><input type="radio" name="q7" value="wrong"> Controls network access for devices</label><br>
+                <label><input type="radio" name="q7" value="correct"> Grants access based on user roles and data classification</label><br>
+                <label><input type="radio" name="q7" value="wrong"> Limits guest access</label><br>
+                <label><input type="radio" name="q7" value="wrong"> Performs posture assessments</label><br>
+            </div>
+        </div>
+
+        <div class="question">
+            <p>8. Which feature of Cisco TrustSec is designed to ensure confidentiality within the network?</p>
+            <div class="answers">
+                <label><input type="radio" name="q8" value="wrong"> Endpoint assessment</label><br>
+                <label><input type="radio" name="q8" value="correct"> Data encryption</label><br>
+                <label><input type="radio" name="q8" value="wrong"> Network segmentation</label><br>
+                <label><input type="radio" name="q8" value="wrong"> Guest access management</label><br>
+            </div>
+        </div>
+
+        <div class="question">
+            <p>9. When should an organization use Cisco ISE?</p>
+            <div class="answers">
+                <label><input type="radio" name="q9" value="wrong"> To encrypt data flows between devices</label><br>
+                <label><input type="radio" name="q9" value="correct"> To enforce authentication and authorization policies for network access</label><br>
+                <label><input type="radio" name="q9" value="wrong"> When protecting sensitive data is a priority</label><br>
+                <label><input type="radio" name="q9" value="wrong"> For data classification</label><br>
+            </div>
+        </div>
+
+        <div class="question">
+            <p>10. What is a key difference between Cisco ISE and TrustSec?</p>
+            <div class="answers">
+                <label><input type="radio" name="q10" value="wrong"> ISE is focused on data security, while TrustSec handles network access.</label><br>
+                <label><input type="radio" name="q10" value="wrong"> ISE is for user authentication, while TrustSec is for data encryption.</label><br>
+                <label><input type="radio" name="q10" value="wrong"> ISE is a cloud solution, while TrustSec is on-premises.</label><br>
+                <label><input type="radio" name="q10" value="correct"> ISE manages guest access, while TrustSec focuses on segmentation.</label><br>
+            </div>
+        </div>
+
+        <div class="result-container">
+            <div class="result" id="score">Score: 0</div>
+            <div class="result" id="rate">Rate: 0%</div>
+        </div>
+
+        <div class="controls">
+            <button onclick="checkAnswers()" id="checkBtn">Check Score</button>
+            <button onclick="submitScore()" id="submitBtn" class="hidden">Submit</button>
+            <button onclick="retryQuiz()" id="retryBtn" class="hidden">Try Again</button>
+            <p id="retryMessage" class="retry-message hidden">You can try once</p>
+        </div>
+    </div>
+
+    <div id="congratsMessage" class="congrats-message">
+        <div class="message" id="congratsText"></div>
+        <button onclick="closeCongrats()">OK</button>
+    </div>
+
+    <script src="Quiz.js"></script>
+</body>
+</html>
