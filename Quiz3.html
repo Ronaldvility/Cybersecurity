@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cybersecurity Quiz 4.3</title>
+    <link rel="stylesheet" href="Quiz.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>4.3 Understanding Cisco's CSIRT</h1>
+
+        <input type="hidden" id="quiz_no" value="3">
+        <input type="hidden" id="quiz_name" value="Understanding Cisco's CSIRT">
+
+        <div class="input-container">
+            <div class="name-input">
+                <label for="Full Name">Full Name:</label>
+                <input type="text" id="name" placeholder="Enter Your Name" required>
+            </div>
+
+            <div class="StudentNumber-input">
+                <label for="Student Number">Student Number:</label>
+                <input type="text" id="studentNumber" placeholder="Enter Your Student Number" required>
+            </div>
+        </div>
+
+        <!-- Questions -->
+        <div class="question">
+            <p>1. What is the primary responsibility of Cisco’s CSIRT?</p>
+            <div class="answers">
+                <label><input type="radio" name="q1" value="wrong"> Developing new software products</label><br>
+                <label><input type="radio" name="q1" value="correct"> Responding to cybersecurity incidents and managing risks</label><br>
+                <label><input type="radio" name="q1" value="wrong"> Marketing Cisco's services</label><br>
+                <label><input type="radio" name="q1" value="wrong"> Managing customer relationships</label><br>
+            </div>
+        </div>
+
+        <div class="question">
+            <p>2. Which tool does Cisco CSIRT use to collect and correlate data for incident detection?</p>
+            <div class="answers">
+                <label><input type="radio" name="q2" value="wrong"> Microsoft Excel</label><br>
+                <label><input type="radio" name="q2" value="correct"> Security Information and Event Management (SIEM)</label><br>
+                <label><input type="radio" name="q2" value="wrong"> Firewall logs</label><br>
+                <label><input type="radio" name="q2" value="wrong"> Google Analytics</label><br>
+            </div>
+        </div>
+
+        <div class="question">
+            <p>3. Which team provides threat intelligence to Cisco's CSIRT?</p>
+            <div class="answers">
+                <label><input type="radio" name="q3" value="correct"> Cisco Talos</label><br>
+                <label><input type="radio" name="q3" value="wrong"> IT Support Team</label><br>
+                <label><input type="radio" name="q3" value="wrong"> Customer Service Team</label><br>
+                <label><input type="radio" name="q3" value="wrong"> Marketing Team</label><br>
+            </div>
+        </div>
+
+        <div class="question">
+            <p>4. What is the first step in the Incident Response Process?</p>
+            <div class="answers">
+                <label><input type="radio" name="q4" value="correct"> Identification</label><br>
+                <label><input type="radio" name="q4" value="wrong"> Containment</label><br>
+                <label><input type="radio" name="q4" value="wrong"> Recovery</label><br>
+                <label><input type="radio" name="q4" value="wrong"> Preparation</label><br>
+            </div>
+        </div>
+
+        <div class="question">
+            <p>5. What is the main goal during the containment phase?</p>
+            <div class="answers">
+                <label><input type="radio" name="q5" value="wrong"> To recover systems</label><br>
+                <label><input type="radio" name="q5" value="correct"> To limit the damage and prevent the spread of the threat</label><br>
+                <label><input type="radio" name="q5" value="wrong"> To identify indicators of compromise</label><br>
+                <label><input type="radio" name="q5" value="wrong"> To collect forensic evidence</label><br>
+            </div>
+        </div>
+
+        <div class="question">
+            <p>6. Which of the following is NOT a proactive measure taken by Cisco's CSIRT?</p>
+            <div class="answers">
+                <label><input type="radio" name="q6" value="wrong"> Vulnerability management</label><br>
+                <label><input type="radio" name="q6" value="correct"> Regular marketing campaigns</label><br>
+                <label><input type="radio" name="q6" value="wrong"> Security awareness training</label><br>
+                <label><input type="radio" name="q6" value="wrong"> Penetration testing</label><br>
+            </div>
+        </div>
+
+        <div class="question">
+            <p>7. What platform does Cisco CSIRT use to unify visibility across networks and endpoints?</p>
+            <div class="answers">
+                <label><input type="radio" name="q7" value="correct"> Cisco SecureX</label><br>
+                <label><input type="radio" name="q7" value="wrong"> Microsoft Azure</label><br>
+                <label><input type="radio" name="q7" value="wrong"> Google Cloud</label><br>
+                <label><input type="radio" name="q7" value="wrong"> Amazon Web Services</label><br>
+            </div>
+        </div>
+
+        <div class="question">
+            <p>8. After a security incident, which activity helps CSIRT improve future security measures?</p>
+            <div class="answers">
+                <label><input type="radio" name="q8" value="wrong"> System recovery</label><br>
+                <label><input type="radio" name="q8" value="correct"> Post-incident activity and review</label><br>
+                <label><input type="radio" name="q8" value="wrong"> Preparation phase</label><br>
+                <label><input type="radio" name="q8" value="wrong"> Identifying new customers</label><br>
+            </div>
+        </div>
+
+        <div class="question">
+            <p>9. Which phase involves restoring affected systems and ensuring they are clean from threats?</p>
+            <div class="answers">
+                <label><input type="radio" name="q9" value="wrong"> Preparation</label><br>
+                <label><input type="radio" name="q9" value="wrong"> Eradication</label><br>
+                <label><input type="radio" name="q9" value="correct"> Recovery</label><br>
+                <label><input type="radio" name="q9" value="wrong"> Identification</label><br>
+            </div>
+        </div>
+
+        <div class="question">
+            <p>10. How does Cisco CSIRT collaborate globally to enhance cybersecurity?</p>
+            <div class="answers">
+                <label><input type="radio" name="q10" value="wrong"> By creating new software products</label><br>
+                <label><input type="radio" name="q10" value="correct"> By partnering with other CSIRTs, law enforcement, and sharing threat intelligence</label><br>
+                <label><input type="radio" name="q10" value="wrong"> By advertising new cybersecurity tools</label><br>
+                <label><input type="radio" name="q10" value="wrong"> By running software updates on global systems</label><br>
+            </div>
+        </div>
+
+        <div class="result-container">
+            <div class="result" id="score">Score: 0</div>
+            <div class="result" id="rate">Rate: 0%</div>
+        </div>
+
+        <div class="controls">
+            <button onclick="checkAnswers()" id="checkBtn">Check Score</button>
+            <button onclick="submitScore()" id="submitBtn" class="hidden">Submit</button>
+            <button onclick="retryQuiz()" id="retryBtn" class="hidden">Try Again</button>
+            <p id="retryMessage" class="retry-message hidden">You can try once</p>
+        </div>
+    </div>
+
+    <div id="congratsMessage" class="congrats-message">
+        <div class="message" id="congratsText"></div>
+        <button onclick="closeCongrats()">OK</button>
+    </div>
+
+    <script src="Quiz.js"></script>
+</body>
+</html>

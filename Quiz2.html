@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cybersecurity Quiz 4.2</title>
+    <link rel="stylesheet" href="Quiz.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>4.2 Cybersecurity Quiz</h1>
+
+        <input type="hidden" id="quiz_no" value="2">
+        <input type="hidden" id="quiz_name" value="Cybersecurity Quiz 4.2">
+
+        <div class="input-container">
+            <div class="name-input">
+                <label for="Full Name">Full Name:</label>
+                <input type="text" id="name" placeholder="Enter Your Name" required>
+            </div>
+
+            <div class="StudentNumber-input">
+                <label for="Student Number">Student Number:</label>
+                <input type="text" id="studentNumber" placeholder="Enter Your Student Number" required>
+            </div>
+        </div>
+
+        <!-- Questions -->
+        <div class="question">
+            <p>1. Which of the following best describes behavior-based security?</p>
+            <div class="answers">
+                <label><input type="radio" name="q1" value="wrong"> It uses pre-defined signatures to detect threats.</label><br>
+                <label><input type="radio" name="q1" value="correct"> It monitors patterns of user activity to identify anomalies.</label><br>
+                <label><input type="radio" name="q1" value="wrong"> It blocks all network traffic by default.</label><br>
+                <label><input type="radio" name="q1" value="wrong"> It relies on user credentials for protection.</label><br>
+            </div>
+        </div>
+
+        <div class="question">
+            <p>2. What is the primary function of NetFlow?</p>
+            <div class="answers">
+                <label><input type="radio" name="q2" value="wrong"> To block suspicious IP addresses.</label><br>
+                <label><input type="radio" name="q2" value="correct"> To monitor and collect network traffic data.</label><br>
+                <label><input type="radio" name="q2" value="wrong"> To encrypt sensitive data.</label><br>
+                <label><input type="radio" name="q2" value="wrong"> To manage network user permissions.</label><br>
+            </div>
+        </div>
+
+        <div class="question">
+            <p>3. Which of the following is NOT a type of penetration test?</p>
+            <div class="answers">
+                <label><input type="radio" name="q3" value="wrong"> Black-box testing</label><br>
+                <label><input type="radio" name="q3" value="wrong"> White-box testing</label><br>
+                <label><input type="radio" name="q3" value="correct"> Red-box testing</label><br>
+                <label><input type="radio" name="q3" value="wrong"> Gray-box testing</label><br>
+            </div>
+        </div>
+
+        <div class="question">
+            <p>4. What is the main purpose of impact reduction in cybersecurity?</p>
+            <div class="answers">
+                <label><input type="radio" name="q4" value="wrong"> To eliminate the risk of cyber-attacks.</label><br>
+                <label><input type="radio" name="q4" value="correct"> To minimize the damage caused by a security incident.</label><br>
+                <label><input type="radio" name="q4" value="wrong"> To monitor user activity for suspicious behavior.</label><br>
+                <label><input type="radio" name="q4" value="wrong"> To prevent all forms of data breaches.</label><br>
+            </div>
+        </div>
+
+        <div class="question">
+            <p>5. Which step is part of the risk management process?</p>
+            <div class="answers">
+                <label><input type="radio" name="q5" value="correct"> Conducting risk assessments</label><br>
+                <label><input type="radio" name="q5" value="wrong"> Creating malware signatures</label><br>
+                <label><input type="radio" name="q5" value="wrong"> Encrypting all outgoing data</label><br>
+                <label><input type="radio" name="q5" value="wrong"> Running penetration tests</label><br>
+            </div>
+        </div>
+
+        <div class="question">
+            <p>6. In behavior-based security, which of the following actions would likely trigger an alert?</p>
+            <div class="answers">
+                <label><input type="radio" name="q6" value="wrong"> A user logging in during business hours.</label><br>
+                <label><input type="radio" name="q6" value="correct"> A user accessing sensitive data outside normal hours.</label><br>
+                <label><input type="radio" name="q6" value="wrong"> Sending an email to a colleague.</label><br>
+                <label><input type="radio" name="q6" value="wrong"> Accessing the internet from a known location.</label><br>
+            </div>
+        </div>
+
+        <div class="question">
+            <p>7. NetFlow data can be used for which of the following purposes?</p>
+            <div class="answers">
+                <label><input type="radio" name="q7" value="wrong"> To block malware from entering the network.</label><br>
+                <label><input type="radio" name="q7" value="correct"> To analyze traffic for unusual patterns.</label><br>
+                <label><input type="radio" name="q7" value="wrong"> To prevent brute-force attacks.</label><br>
+                <label><input type="radio" name="q7" value="wrong"> To encrypt data traffic.</label><br>
+            </div>
+        </div>
+
+        <div class="question">
+            <p>8. What is the goal of penetration testing?</p>
+            <div class="answers">
+                <label><input type="radio" name="q8" value="wrong"> To encrypt user data.</label><br>
+                <label><input type="radio" name="q8" value="correct"> To simulate attacks and find vulnerabilities.</label><br>
+                <label><input type="radio" name="q8" value="wrong"> To train employees in cybersecurity practices.</label><br>
+                <label><input type="radio" name="q8" value="wrong"> To block unauthorized access to the network.</label><br>
+            </div>
+        </div>
+
+        <div class="question">
+            <p>9. Why is incident response planning important for impact reduction?</p>
+            <div class="answers">
+                <label><input type="radio" name="q9" value="wrong"> It helps prevent attacks.</label><br>
+                <label><input type="radio" name="q9" value="correct"> It provides a step-by-step guide for responding to a cyber incident.</label><br>
+                <label><input type="radio" name="q9" value="wrong"> It ensures the encryption of all data.</label><br>
+                <label><input type="radio" name="q9" value="wrong"> It focuses on monitoring network traffic.</label><br>
+            </div>
+        </div>
+
+        <div class="question">
+            <p>10. Risk management involves which of the following activities?</p>
+            <div class="answers">
+                <label><input type="radio" name="q10" value="wrong"> Training employees in cybersecurity awareness.</label><br>
+                <label><input type="radio" name="q10" value="correct"> Identifying and assessing potential security threats.</label><br>
+                <label><input type="radio" name="q10" value="wrong"> Installing antivirus software.</label><br>
+                <label><input type="radio" name="q10" value="wrong"> Blocking all external network connections.</label><br>
+            </div>
+        </div>
+
+        <div class="result-container">
+            <div class="result" id="score">Score: 0</div>
+            <div class="result" id="rate">Rate: 0%</div>
+        </div>
+
+        <div class="controls">
+            <button onclick="checkAnswers()" id="checkBtn">Check Score</button>
+            <button onclick="submitScore()" id="submitBtn" class="hidden">Submit</button>
+            <button onclick="retryQuiz()" id="retryBtn" class="hidden">Try Again</button>
+            <p id="retryMessage" class="retry-message hidden">You can try once</p>
+        </div>
+    </div>
+
+    <div id="congratsMessage" class="congrats-message">
+        <div class="message" id="congratsText"></div>
+        <button onclick="closeCongrats()">OK</button>
+    </div>
+
+    <script src="Quiz.js"></script>
+</body>
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cybersecurity Quiz 5.1</title>
+    <link rel="stylesheet" href="Quiz.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>5.1 Legal and Ethical Issues</h1>
+
+        <input type="hidden" id="quiz_no" value="7">
+        <input type="hidden" id="quiz_name" value="Legal and Ethical Issues">
+
+        <div class="input-container">
+            <div class="name-input">
+                <label for="Full Name">Full Name:</label>
+                <input type="text" id="name" placeholder="Enter Your Name" required>
+            </div>
+
+            <div class="StudentNumber-input">
+                <label for="Student Number">Student Number:</label>
+                <input type="text" id="studentNumber" placeholder="Enter Your Student Number" required>
+            </div>
+        </div>
+
+        <!-- Questions -->
+        <div class="question">
+            <p>1. What is one of the most important laws regulating data protection in the European Union?</p>
+            <div class="answers">
+                <label><input type="radio" name="q1" value="wrong"> HIPAA</label><br>
+                <label><input type="radio" name="q1" value="correct"> GDPR</label><br>
+                <label><input type="radio" name="q1" value="wrong"> CFAA</label><br>
+                <label><input type="radio" name="q1" value="wrong"> CCPA</label><br>
+            </div>
+        </div>
+
+        <div class="question">
+            <p>2. Which U.S. law criminalizes unauthorized access to computer systems?</p>
+            <div class="answers">
+                <label><input type="radio" name="q2" value="wrong"> Electronic Communications Privacy Act (ECPA)</label><br>
+                <label><input type="radio" name="q2" value="correct"> Computer Fraud and Abuse Act (CFAA)</label><br>
+                <label><input type="radio" name="q2" value="wrong"> Gramm-Leach-Bliley Act (GLBA)</label><br>
+                <label><input type="radio" name="q2" value="wrong"> Health Insurance Portability and Accountability Act (HIPAA)</label><br>
+            </div>
+        </div>
+
+        <div class="question">
+            <p>3. Which law requires healthcare organizations in the U.S. to protect patient data?</p>
+            <div class="answers">
+                <label><input type="radio" name="q3" value="wrong"> GDPR</label><br>
+                <label><input type="radio" name="q3" value="wrong"> CFAA</label><br>
+                <label><input type="radio" name="q3" value="correct"> HIPAA</label><br>
+                <label><input type="radio" name="q3" value="wrong"> CCPA</label><br>
+            </div>
+        </div>
+
+        <div class="question">
+            <p>4. What type of crime involves illegal activities such as phishing, ransomware, and financial fraud?</p>
+            <div class="answers">
+                <label><input type="radio" name="q4" value="wrong"> Cyber espionage</label><br>
+                <label><input type="radio" name="q4" value="correct"> Cybercrime</label><br>
+                <label><input type="radio" name="q4" value="wrong"> Intellectual property theft</label><br>
+                <label><input type="radio" name="q4" value="wrong"> Insider threat</label><br>
+            </div>
+        </div>
+
+        <div class="question">
+            <p>5. Which international treaty is aimed at harmonizing laws to combat cybercrime across borders?</p>
+            <div class="answers">
+                <label><input type="radio" name="q5" value="correct"> Budapest Convention on Cybercrime</label><br>
+                <label><input type="radio" name="q5" value="wrong"> European Convention on Data Protection</label><br>
+                <label><input type="radio" name="q5" value="wrong"> Paris Agreement on Cybersecurity</label><br>
+                <label><input type="radio" name="q5" value="wrong"> International Cybersecurity Treaty</label><br>
+            </div>
+        </div>
+
+        <div class="question">
+            <p>6. What is a common legal consequence for failing to comply with data protection laws like the GDPR or CCPA?</p>
+            <div class="answers">
+                <label><input type="radio" name="q6" value="wrong"> Criminal charges</label><br>
+                <label><input type="radio" name="q6" value="wrong"> Reputational harm only</label><br>
+                <label><input type="radio" name="q6" value="correct"> Financial fines</label><br>
+                <label><input type="radio" name="q6" value="wrong"> No legal consequences</label><br>
+            </div>
+        </div>
+
+        <div class="question">
+            <p>7. In the U.S., which law grants broad surveillance powers to government agencies for national security?</p>
+            <div class="answers">
+                <label><input type="radio" name="q7" value="correct"> Patriot Act</label><br>
+                <label><input type="radio" name="q7" value="wrong"> CFAA</label><br>
+                <label><input type="radio" name="q7" value="wrong"> GDPR</label><br>
+                <label><input type="radio" name="q7" value="wrong"> Safe Harbor Act</label><br>
+            </div>
+        </div>
+
+        <div class="question">
+            <p>8. Which of the following is a legal issue associated with vulnerability disclosure?</p>
+            <div class="answers">
+                <label><input type="radio" name="q8" value="wrong"> Researchers must exploit the vulnerability before disclosing.</label><br>
+                <label><input type="radio" name="q8" value="wrong"> Researchers can disclose vulnerabilities publicly without legal risks.</label><br>
+                <label><input type="radio" name="q8" value="correct"> Disclosing vulnerabilities without permission may lead to prosecution.</label><br>
+                <label><input type="radio" name="q8" value="wrong"> Researchers are always protected under cybercrime laws.</label><br>
+            </div>
+        </div>
+
+        <div class="question">
+            <p>9. What type of law protects software, digital content, and proprietary information from unauthorized use?</p>
+            <div class="answers">
+                <label><input type="radio" name="q9" value="wrong"> Cybercrime law</label><br>
+                <label><input type="radio" name="q9" value="correct"> Intellectual property law</label><br>
+                <label><input type="radio" name="q9" value="wrong"> Data protection law</label><br>
+                <label><input type="radio" name="q9" value="wrong"> Privacy law</label><br>
+            </div>
+        </div>
+
+        <div class="question">
+            <p>10. Who is typically held liable if a third-party vendor suffers a data breach that affects an organization’s data?</p>
+            <div class="answers">
+                <label><input type="radio" name="q10" value="wrong"> The vendor alone</label><br>
+                <label><input type="radio" name="q10" value="wrong"> The organization alone</label><br>
+                <label><input type="radio" name="q10" value="correct"> Both the organization and vendor, depending on contracts</label><br>
+                <label><input type="radio" name="q10" value="wrong"> No one can be held liable</label><br>
+            </div>
+        </div>
+
+        <div class="result-container">
+            <div class="result" id="score">Score: 0</div>
+            <div class="result" id="rate">Rate: 0%</div>
+        </div>
+
+        <div class="controls">
+            <button onclick="checkAnswers()" id="checkBtn">Check Score</button>
+            <button onclick="submitScore()" id="submitBtn" class="hidden">Submit</button>
+            <button onclick="retryQuiz()" id="retryBtn" class="hidden">Try Again</button>
+            <p id="retryMessage" class="retry-message hidden">You can try once</p>
+        </div>
+    </div>
+
+    <div id="congratsMessage" class="congrats-message">
+        <div class="message" id="congratsText"></div>
+        <button onclick="closeCongrats()">OK</button>
+    </div>
+
+    <script src="Quiz.js"></script>
+</body>
+</html>

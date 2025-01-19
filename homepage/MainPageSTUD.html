@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Quiz Module</title>
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <!-- Link to CSS -->
+    <link rel="stylesheet" href="STUD.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf_viewer.min.css" />
+
+
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <div class="sidebar collapsed" id="sidebar">
+            <!-- Sidebar Logo -->
+            <div class="logo" id="logo">
+                <i class="fas fa-shield-alt"></i>
+                <span class="logo-text">Cybersecurity</span>
+            </div>
+            <!-- Sidebar Menu -->
+            <ul class="menu">
+                <li><a href="javascript:void(0);" id="modules-btn">Modules</a></li>
+                <li><a href="javascript:void(0);" id="leaderboard-btn">Leaderboards</a></li>
+                <li><a href="javascript:void(0);" id="quiz-btn">Quiz</a></li>
+                <li><a href="javascript:void(0);" id="results-btn">Results</a></li>
+                <li><a href="javascript:void(0);" id="about-btn">About</a></li>
+            </ul>
+        </div>
+
+        
+        <!-- Main Content -->
+        <div class="main-content" id="main-content">
+            <h1>Welcome to the Cybersecurity Interactive App</h1>
+
+            
+            
+            <!-- Modules Section (Initially hidden) -->
+            <div class="modules-section" id="modules-section" style="display: none;">
+                <div class="module-box" data-module="1">Module 1</div>
+                <div class="module-box" data-module="2">Module 2</div>
+                <div class="module-box" data-module="3">Module 3</div>
+                <div class="module-box" data-module="4">Module 4</div>
+                <div class="module-box" data-module="5">Module 5</div>
+            </div>
+
+            <!-- Quiz Section (Initially hidden) -->
+            <div class="quiz-section" id="quiz-section" style="display: none;">
+                <a href="../Quiz.html">
+                    <div class="quiz-box" data-quiz="1">Quiz 1</div>
+                </a>
+                <a href="../Quiz2.html">
+                    <div class="quiz-box" data-quiz="2">Quiz 2</div>
+                </a>
+                <a href="../Quiz3.html">
+                    <div class="quiz-box" data-quiz="3">Quiz 3</div>
+                </a>
+                <a href="../Quiz4.html">
+                    <div class="quiz-box" data-quiz="4">Quiz 4</div>
+                </a>
+                <a href="../Quiz5.html">
+                    <div class="quiz-box" data-quiz="5">Quiz 5</div>
+                </a>
+                <a href="../Quiz6.html">
+                    <div class="quiz-box" data-quiz="6">Quiz 6</div>
+                </a>
+                <a href="../Quiz7.html">
+                    <div class="quiz-box" data-quiz="7">Quiz 7</div>
+                </a>
+                <a href="../Quiz8.html">
+                    <div class="quiz-box" data-quiz="8">Quiz 8</div>
+                </a>
+                <a href="../Quiz9.html">
+                    <div class="quiz-box" data-quiz="9">Quiz 9</div>
+                </a>
+                <a href="../Quiz10.html">
+                    <div class="quiz-box" data-quiz="10">Quiz 10</div>
+                </a>
+                <a href="../Quiz11.html">
+                    <div class="quiz-box" data-quiz="11">Quiz 11</div>
+                </a>
+                <a href="../Quiz12.html">
+                    <div class="quiz-box" data-quiz="12">Quiz 12</div>
+                </a>
+            </div>
+
+          <!-- Leaderboard Section (Initially hidden) -->
+          <div id="leaderboard-section" style="display: none;">
+            <h2>Leaderboard</h2>
+            <table id="leaderboard-table">
+                <thead>
+                    <tr>
+                        <th>Rank</th>
+                        <th>Student Number</th>
+                        <th>Total Points</th>
+                    </tr>
+                </thead>
+                <tbody id="leaderboard-table-body">
+                    <!-- Leaderboard data will be inserted here dynamically -->
+                </tbody>
+            </table>
+        </div>
+            
+    <!-- Results Section (Initially hidden) -->
+<div class="results-section" id="results-section" style="display: none;">
+    <a href="../QRES1.html">
+        <div class="results-box" data-result="1">Quiz 1 Results</div>
+    </a>
+    <a href="../QRES2.html">
+        <div class="results-box" data-result="2">Quiz 2 Results</div>
+    </a>
+    <a href="../QRES3.html">
+        <div class="results-box" data-result="3">Quiz 3 Results</div>
+    </a>
+    <a href="../QRES4.html">
+        <div class="results-box" data-result="4">Quiz 4 Results</div>
+    </a>
+    <a href="../QRES5.html">
+        <div class="results-box" data-result="5">Quiz 5 Results</div>
+    </a>
+    <a href="../QRES6.html">
+        <div class="results-box" data-result="6">Quiz 6 Results</div>
+    </a>
+    <a href="../QRES7.html">
+        <div class="results-box" data-result="7">Quiz 7 Results</div>
+    </a>
+    <a href="../QRES8.html">
+        <div class="results-box" data-result="8">Quiz 8 Results</div>
+    </a>
+    <a href="../QRES9.html">
+        <div class="results-box" data-result="9">Quiz 9 Results</div>
+    </a>
+    <a href="../QRES10.html">
+        <div class="results-box" data-result="10">Quiz 10 Results</div>
+    </a>
+    <a href="../QRES11.html">
+        <div class="results-box" data-result="11">Quiz 11 Results</div>
+    </a>
+    <a href="../QRES12.html">
+        <div class="results-box" data-result="12">Quiz 12 Results</div>
+    </a>
+</div>
+
+            <!-- About Section (Initially hidden) -->
+<div class="about-section" id="about-section" style="display: none;">
+    <h2>Introduction</h2>
+    <p>Welcome to our interactive web application, your ultimate destination for cybersecurity education! We specialize in creating engaging quizzes that cover critical topics like legal, ethical, and corporate issues, as well as Cisco ISE and TrustSec. Whether you're a student, a professional, or someone curious about cybersecurity, our platform is designed to enhance your knowledge and make learning both fun and impactful.</p>
+    
+    <h2>Team Members</h2>
+    <div class="team-members">
+        <div class="team-member">
+            <img src="../image-members/OIP.jpg" alt="Team Member 1" class="team-member-img">
+            <p>Adonis, John Greg P.</p>
+        </div>
+        <div class="team-member">
+            <img src="../image-members/OIP.jpg" alt="Team Member 2" class="team-member-img">
+            <p>Ambal, Bartolome G.</p>
+        </div>
+        <div class="team-member">
+            <img src="../image-members/OIP.jpg" alt="Team Member 3" class="team-member-img">
+            <p>Cafe, Genn Anthony B.</p>
+        </div>
+        <div class="team-member">
+            <img src="../image-members/OIP.jpg" alt="Team Member 4" class="team-member-img">
+            <p>Catalo, Mark Philip J.</p>
+        </div>
+        <div class="team-member">
+            <img src="../image-members/OIP.jpg" alt="Team Member 5" class="team-member-img">
+            <p>Donceras, Ronald Y.</p>
+        </div>
+        <div class="team-member">
+            <img src="../image-members/omskiee.jpg" alt="Team Member 6" class="team-member-img">
+            <p>Velasco, Joemark Angelus J.</p>
+        </div>
+        <div class="team-member">
+            <img src="../image-members/OIP.jpg" alt="Team Member 7" class="team-member-img">
+            <p>Verdejo, Adrian Francis B.</p>
+        </div>
+    </div>
+    
+    <h2>Contact Information</h2>
+    <p>We’d love to hear from you! Whether you have feedback, questions, or ideas, feel free to reach out:</p>
+    <p>Email: <a href="pentatechSolutions@gmail.com">pentatechSolutions@gmail.com</a></p>
+    <p>Phone: [+63 9177322332]</p>
+    <p>Social Media: <a href="https://facebook.com/yourprofile">Twitter</a>, <a href="https://linkedin.com/in/yourprofile">LinkedIn</a>]</p>
+
+</div>
+
+
+
+        
+            <!-- PDF Viewer Section (Initially hidden) -->
+            <div id="pdf-viewer" style="display: none; position: relative;">
+                <div id="progress-container" style="position: absolute; top: 0; left: 0; width: 100%; height: 15px; background-color: #f1f1f1; z-index: 10;">
+                    <span id="progress-text" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: white; font-size: 12px;">0%</span>
+                    <div id="progress-bar" style="width: 0%; height: 100%; background-color: #4caf50;"></div>
+                </div>
+                <div id="pdf-container" style="overflow-y: scroll; height: 600px; background: #fff;"></div>
+                <button id="back-btn" style="position: absolute; top: 60px; left: 20px; padding: 10px; background-color:rgb(8, 84, 197); color: white; border: none; cursor: pointer; z-index: 10;">
+                    Back
+                </button>
+            </div>
+            
+            
+
+        </div>
+    </div>
+
+
+    
+    <!-- Link to JavaScript -->
+    <script src="STUD.js"></script>
+</body>
+</html>
